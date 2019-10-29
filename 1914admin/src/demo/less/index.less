@@ -1,0 +1,21 @@
+@color:blue;
+@font_color:#666;
+
+@import "../../style/index.less";
+.less{
+  .test(@w,@h){
+    width: unit(@w,px);
+    height: unit(@h,px);
+  }
+  .son1{
+    .test(100,100);
+    background: @themeColor;
+  }
+  .son2{
+    .test(100,100);
+    background: @color;
+  }
+  h3{
+    color:@font_color;
+  }
+}
